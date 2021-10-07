@@ -5,7 +5,7 @@ This is a simple memory match game in which the user tests their memory skills b
 
 [Play the game here.]()
 
-<h2 align="center"><img src="docs/" alt="site image"></h2>
+<h4 align="center"><img src="docs/" alt="site image"></h4>
 
 ## User Experience (UX)
 - ### User Stories
