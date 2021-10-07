@@ -1,7 +1,7 @@
 <h1 align="center">Pokemon Match</h1>
 <h2 align="center">Gotta Match 'Em All!</h2>
 
-This is a simple memory match game in which the user tests their memory skills by matching up pairs of the same Pokemon, by turning over cards on a board to reveal the hidden Pokemon character. 
+This is a simple memory match game in which the user tests their memory skills by matching up pairs of the same Pokemon by turning over cards on a board to reveal the hidden Pokemon character. 
 
 [Play the game here.]()
 
@@ -9,13 +9,17 @@ This is a simple memory match game in which the user tests their memory skills b
 
 ## User Experience (UX)
 - ### User Stories
-    - ### (what I expect)
+    - I would like to play a simple game matching up pairs of images
+    - I expect feedback to confirm each matching pair made
+    - I expect to see how many moves I have made
+    - I expect to see a timer to show how long I take to complete the game
+    - I expect to have fun! :)
 
 - ### Design
     - ### Colour scheme:
-        - 
+        - Colours used on the game to match the blue, yellow and red of the official Pokemon colour scheme
     - ### Typography:
-        - 
+        - Google Fonts - [ArchitectsDaughter](https://fonts.google.com/specimen/Architects+Daughter#standard-styles) 
 
 - ### Wireframes
     - ### [(link to wireframes pdf)]()
