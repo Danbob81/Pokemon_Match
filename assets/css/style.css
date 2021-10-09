@@ -1,3 +1,14 @@
 body {
     font-family: 'Architects Daughter', cursive;
 }
+
+.logo {
+    text-align: center;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 400px;
+}
