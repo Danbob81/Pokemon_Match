@@ -86,8 +86,9 @@ This is a simple memory match game in which the user tests their memory skills b
 - 
 - 
 ### Media:
-- 
-- Pokeball sound taken from Zedge - [Pokeball Catch by julianoc](https://www.zedge.net/ringtone/9c925805-3ae6-3123-8508-67d7d7ed90ac)
+- Pokemon logo taken from [pngitem.com](https://www.pngitem.com/middle/JTboox_gotta-catch-em-all-transparent-pokemon-logo-pokemon/)
+- Ash image taken from [pngitem.com](https://www.pngitem.com/middle/ibxbw_pokemon-ash-ash-pokemon-i-choose-you-hd/)
+- Pokeball sound taken from Zedge - [Pokeball Catch by julianoc](https://www.zedge.net/ringtone/9c925805-3ae6-3123-8508-67d7d7ed90ac) - note: I edited the original mp3 file to create three separate files using WavePad Audio Editor (free download from Microsoft Store) 
 - 
 ### Acknowledgements:
 - 
