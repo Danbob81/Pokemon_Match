@@ -1,14 +1,34 @@
 body {
     font-family: 'Architects Daughter', cursive;
+    /* background-image: url("./images/ash.png");
+    background-repeat: no-repeat;
+    background-position: left center; */
 }
 
 .logo {
     text-align: center;
 }
 
+.game-area {
+    background-color: #f0cf00;
+    border: 5px solid #00478d;
+    border-radius: 30px;
+}
+
+.rules-area {
+    text-align: center;
+    color: white;
+    background-color: #00478c;
+    border: 5px solid #f0cf00;
+    border-radius: 30px;
+}
+
 .grid {
+    align-items: center;
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row-reverse;
     height: 300px;
     width: 400px;
 }
