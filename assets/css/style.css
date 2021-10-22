@@ -1,18 +1,38 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
 body {
+    height: 100%;
+    width: 100%;
     font-family: 'Architects Daughter', cursive;
-    /* background-image: url("./images/ash.png");
-    background-repeat: no-repeat;
-    background-position: left center; */
 }
 
 .logo {
     text-align: center;
 }
 
+.ash {
+    margin: auto;
+}
+
 .game-area {
     background-color: #f0cf00;
     border: 5px solid #00478d;
     border-radius: 30px;
+}
+
+.grid {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    height: auto;
+    width: auto;
+    padding: 10%;
 }
 
 .rules-area {
@@ -23,12 +43,27 @@ body {
     border-radius: 30px;
 }
 
-.grid {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-    height: 300px;
-    width: 400px;
+@media screen and (max-width: 768px) {
+    .ash {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .game-area {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .grid {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        height: 400px;
+        width: 600px;
+        padding: 10%;
+    }
 }

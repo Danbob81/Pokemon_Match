@@ -16,15 +16,17 @@
 
 <body>
     <heading class="logo">
-        <h1><img src="assets/images/pokemonlogo.png" alt="pokemon logo" width="400" height="200" class="pure-img"></h1>
+        <h1><img src="assets/images/pokemonlogo.png" alt="pokemon logo" width="400" height="200"></h1>
     </heading>
 
     <div class="container">
         <div class="row">
-            <div class="col-lg-2 ash">
-                <img src="assets/images/ash.png" alt="Ash" width="200" height="400" fixed>
+            <div class="col-lg-3 ash">
+                <picture class="ash">
+                    <img src="assets/images/ash.png" class="pure-img" alt="ash" width="auto">
+                </picture>
             </div>
-            <div class="col-lg-6 game-area">
+            <div class="col-lg-6 col-md-8 game-area">
                 <div class="grid">
                     <img src="assets/images/pokeball.png" alt="pokeball image">
                     <img src="assets/images/pokeball.png" alt="pokeball image">
@@ -41,12 +43,18 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 rules-area">
+            <div class="col-lg-3 col-md-4 rules-area">
                 <img src="assets/images/pikachu.png" alt="Pikachu">
-                <h2>Rules</h2>
-                <p>Game Rules</p>
-                <h2>Moves</h2>
-                <h2>Time</h2>
+                <hr>
+                <!-- Button to launch modal (small screen size only) -->
+                <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gameModal">
+                    Play Game
+                  </button> -->
+                <h2>Rules:</h2>
+                <p>Click on each Pokeball to reveal the Pokemon inside. <br>Match two of the same Pokemon to catch them. <br>If the Pokemon don't match, the Pokeballs will reset. Try to complete the game in as few moves and as quickly as possible.
+                </p>
+                <h2>Moves: </h2>
+                <h2>Time: </h2>
             </div>
         </div>
     </div>
