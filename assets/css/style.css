@@ -5,8 +5,9 @@
 }
 
 body {
-    height: 100%;
-    width: 100%;
+    max-height: 100vh;
+    /* height: 100%; */
+    /* width: 100%; */
     font-family: 'Architects Daughter', cursive;
 }
 
@@ -43,7 +44,7 @@ body {
     border-radius: 30px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
     .ash {
         display: none;
     }
@@ -52,6 +53,22 @@ body {
 @media screen and (max-width: 576px) {
     .game-area {
         display: none;
+    }
+    .modal-body,
+    .btn-close {
+        text-align: right;
+    }
+    .modal-body,
+    .grid {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        height: auto;
+        width: auto;
+        padding: 0%;
+        margin: auto;
     }
 }
 
