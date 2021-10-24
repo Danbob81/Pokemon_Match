@@ -2,12 +2,10 @@
     padding: 0px;
     margin: 0px;
     border: 0px;
+    max-height: 100vh;
 }
 
 body {
-    max-height: 100vh;
-    /* height: 100%; */
-    /* width: 100%; */
     font-family: 'Architects Daughter', cursive;
 }
 
@@ -16,8 +14,16 @@ body {
     text-align: center;
 }
 
+.image-area {
+    text-align: center;
+    color: white;
+    background-color: #a19e9e;
+    border: 5px solid #ef4036;
+    border-radius: 1.875rem;
+}
+
 .ash {
-    margin: auto;
+    padding-top: 15%;
 }
 
 .game-area {
@@ -39,26 +45,43 @@ body {
 
 .rules-area {
     text-align: center;
-    color: white;
+    color: #fff;
     background-color: #00478c;
     border: 5px solid #f0cf00;
     border-radius: 1.875rem;
 }
 
-.btn-primary {
+footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    color: #fff;
+    background-color: #ef4036;
+    border: 5px solid #00478c;
+    border-radius: 1.875rem;
+}
+
+
+/* .btn-primary {
     color: #fff;
     background-color: #ef4036;
     border-color: #ffffff;
     border-radius: 50rem;
-}
+} */
 
 .btn {
     display: none;
 }
 
 @media screen and (max-width: 992px) {
-    .ash {
+    .image-area {
         display: none;
+    }
+    footer {
+        position: relative;
+        margin-top: 2%;
     }
 }
 
@@ -68,6 +91,10 @@ body {
     }
     .pikachu {
         display: none;
+    }
+    footer {
+        position: relative;
+        margin-top: 2%;
     }
     .btn {
         display: contents;
@@ -112,22 +139,29 @@ body {
             transform: translate(1px, -2px) rotate(-1deg);
         }
     }
-    .modal-body,
-    .btn-close {
-        text-align: right;
+    .modal-header {
+        display: block;
+        text-align: center;
+        background-color: #f0cf00;
+        padding: 1rem;
+        border: none;
     }
+    /* .modal-header,
+    .btn-close {
+        text-align: center;
+    } */
     .modal-body,
     .grid {
         background-color: #f0cf00;
         align-items: flex-start;
         justify-content: center;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row-reverse;
+        /* flex-wrap: wrap; */
+        /* flex-direction: row-reverse; */
         height: auto;
         width: auto;
         padding: 0rem;
         margin: auto;
+        padding-top: 10%;
     }
 }
 
