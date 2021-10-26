@@ -49,22 +49,22 @@ document.addEventListener('DOMContentLoaded', () => {
             name: 'psyduck',
             img: 'assets/images/psyduck.png'
         },
-        {
-            name: 'snorlax',
-            img: 'assets/images/snorlax.png'
-        },
-        {
-            name: 'snorlax',
-            img: 'assets/images/snorlax.png'
-        },
-        {
-            name: 'squirtle',
-            img: 'assets/images/squirtle.png'
-        },
-        {
-            name: 'squirtle',
-            img: 'assets/images/squirtle.png'
-        },
+        // {
+        //     name: 'snorlax',
+        //     img: 'assets/images/snorlax.png'
+        // },
+        // {
+        //     name: 'snorlax',
+        //     img: 'assets/images/snorlax.png'
+        // },
+        // {
+        //     name: 'squirtle',
+        //     img: 'assets/images/squirtle.png'
+        // },
+        // {
+        //     name: 'squirtle',
+        //     img: 'assets/images/squirtle.png'
+        // },
     ]
 
     cardArray.sort(() => 0.5 - Math.random())
