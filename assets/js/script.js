@@ -95,16 +95,18 @@ document.addEventListener('DOMContentLoaded', () => {
         if (optionOneId === optionTwoId) {
             cards[optionOneId].setAttribute('src', 'assets/images/pokeball.png')
             cards[optionTwoId].setAttribute('src', 'assets/images/pokeball.png')
-            alert('You have clicked the same image!')
+                // alert('You have clicked the same image!')
         } else if (cardsChosen[0] === cardsChosen[1]) {
-            alert('You found a match!')
-            cards[optionOneId].removeEventListener('click', flipCard)
-            cards[optionTwoId].removeEventListener('click', flipCard)
+            // alert('You found a match!')
+            cards[optionOneId].removeEventListener('click', flipCard, )
+            cards[optionTwoId].removeEventListener('click', flipCard, )
             cardsWon.push(cardsChosen)
+            playAudio1()
         } else {
             cards[optionOneId].setAttribute('src', 'assets/images/pokeball.png')
             cards[optionTwoId].setAttribute('src', 'assets/images/pokeball.png')
-            alert('Sorry, try again!')
+            playAudio3()
+                // alert('Sorry, try again!')
         }
         cardsChosen = []
         cardsChosenId = []
@@ -119,11 +121,29 @@ document.addEventListener('DOMContentLoaded', () => {
         let cardId = this.getAttribute('data-id')
         cardsChosen.push(cardArray[cardId].name)
         cardsChosenId.push(cardId)
+        playAudio2()
         this.setAttribute('src', cardArray[cardId].img)
         if (cardsChosen.length === 2) {
             setTimeout(checkForMatch, 500)
         }
     }
+    // card sounds
+
+    function playAudio1() {
+        let sound1 = document.getElementById('sound1')
+        sound1.play();
+    }
+
+    function playAudio2() {
+        let sound2 = document.getElementById('sound2')
+        sound2.play();
+    }
+
+    function playAudio3() {
+        let sound3 = document.getElementById('sound3')
+        sound3.play();
+    }
+
 
     createBoard()
 })
