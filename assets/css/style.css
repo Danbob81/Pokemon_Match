@@ -86,9 +86,9 @@ footer {
 }
 
 @media screen and (max-width: 576px) {
-    .game-area {
+    /* .game-area {
         display: none;
-    }
+    } */
     .pikachu {
         display: none;
     }
@@ -139,30 +139,28 @@ footer {
             transform: translate(1px, -2px) rotate(-1deg);
         }
     } */
-    .modal-header {
+    /* .modal-header {
         display: block;
         text-align: center;
         background-color: #f0cf00;
         padding: 1rem;
         border: none;
-    }
+    } */
     /* .modal-header,
     .btn-close {
         text-align: center;
     } */
-    .modal-body,
+    /* .modal-body,
     .grid {
         background-color: #f0cf00;
         align-items: flex-start;
         justify-content: center;
-        /* flex-wrap: wrap; */
-        /* flex-direction: row-reverse; */
         height: auto;
         width: auto;
         padding: 0rem;
         margin: auto;
         padding-top: 10%;
-    }
+    } */
 }
 
 @media screen and (min-width: 1400px) {
