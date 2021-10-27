@@ -25,16 +25,14 @@
                 <embed type="image/png" src="assets/images/ash.png" class="ash" alt="Ash Ketchum" width="auto">
             </section>
             <section class="col-lg-6 col-md-8 game-area">
-                <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gameModal">
-                    Tap the Pokeball to Play!<br><img src="assets/images/pokeball.png">
-                  </button> -->
+                <!-- <button onclick="playGame()" type="button" class="play-game"><img src="assets/images/pokeball.png"><br>Tap the Pokeball to play!</button> -->
                 <div class="grid"> </div>
             </section>
 
             <section class="col-lg-3 col-md-4 rules-area">
                 <embed type="image/png" src="assets/images/pikachu.png" class="pikachu" alt="Pikachu">
                 <!-- Button to launch modal (small screen size only) -->
-                <button onclick="playAudio()" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gameModal">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gameModal" id="play">
                     Tap the Pokeball to Play!<br><img src="assets/images/pokeball.png">
                   </button>
                 <hr>
@@ -65,6 +63,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
+                    <!-- <button onclick="playGame()" type="button" class="play-game"><img src="assets/images/pokeball.png"><br>Tap the Pokeball to play!</button> -->
                     <div class="grid"> </div>
                 </div>
             </div>

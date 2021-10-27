@@ -99,7 +99,7 @@ footer {
     .btn {
         display: contents;
     }
-    .btn,
+    /* .btn,
     img:hover {
         animation: shake 0.5s;
         animation-iteration-count: 2;
@@ -116,10 +116,10 @@ footer {
         }
         30% {
             /* transform: translate(3px, 2px) rotate(0deg); */
-        }
-        40% {
-            /* transform: translate(1px, -1px) rotate(1deg); */
-        }
+    /* } */
+    /* 40% { */
+    /* transform: translate(1px, -1px) rotate(1deg); */
+    /* }
         50% {
             transform: translate(-1px, 2px) rotate(-1deg);
         }
@@ -138,7 +138,7 @@ footer {
         100% {
             transform: translate(1px, -2px) rotate(-1deg);
         }
-    }
+    } */
     .modal-header {
         display: block;
         text-align: center;
