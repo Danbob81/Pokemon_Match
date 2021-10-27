@@ -21,14 +21,6 @@
 
     <div class="container">
         <div class="row gy-1">
-            <section class="col-lg-3 image-area">
-                <embed type="image/png" src="assets/images/ash.png" class="ash" alt="Ash Ketchum" width="auto">
-            </section>
-            <section class="col-lg-6 col-md-8 game-area">
-                <!-- <button onclick="playGame()" type="button" class="play-game"><img src="assets/images/pokeball.png"><br>Tap the Pokeball to play!</button> -->
-                <div class="grid"> </div>
-            </section>
-
             <section class="col-lg-3 col-md-4 rules-area">
                 <embed type="image/png" src="assets/images/pikachu.png" class="pikachu" alt="Pikachu">
                 <!-- Button to launch modal (small screen size only) -->
@@ -41,6 +33,17 @@
                 </p>
                 <h2>Score: <span id="result"></span></h2>
                 <h2>Time: </h2>
+            </section>
+
+            <section class="col-lg-6 col-md-8 game-area">
+                <div class="grid"> </div>
+                <br>
+                <button type="button" class="restart">Start Again</button>
+                <button type="button" class="quit">Quit Game</button>
+            </section>
+
+            <section class="col-lg-3 image-area">
+                <embed type="image/png" src="assets/images/ash.png" class="ash" alt="Ash Ketchum" width="auto">
             </section>
         </div>
     </div>
@@ -56,19 +59,19 @@
     </footer>
 
     <!-- Modal (small screen size only)-->
-    <div class="modal fade" id="gameModal" tabindex="-1" aria-labelledby="gameModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="gameModal" tabindex="-1" aria-labelledby="gameModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-fullscreen-sm-down">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <!-- <button onclick="playGame()" type="button" class="play-game"><img src="assets/images/pokeball.png"><br>Tap the Pokeball to play!</button> -->
-                    <div class="grid"> </div>
+                    <button onclick="playGame()" type="button" class="play-game"><img src="assets/images/pokeball.png"><br>Tap the Pokeball to play!</button>
+                   <div class="grid"> </div>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <audio id="sound1">
         <source src="assets/sounds/pokeball1.mp3" type="audio/mpeg">
