@@ -6,11 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css" /> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/script.js"></script>
+    <!-- <script src="assets/js/script.js"></script> -->
+    <link rel="stylesheet" href="assets/css/style2.css">
+    <script src="assets/js/jquery_functions.js"></script>
     <title>Pokemon Match | Gotta match 'em all!</title>
 </head>
 
@@ -19,59 +22,77 @@
         <h1 class="logo"><embed type="image/png" src="assets/images/pokemonlogo.png" alt="pokemon logo"></h1>
     </heading>
 
-    <div class="container">
-        <div class="row gy-1">
-            <section class="col-lg-3 col-md-4 rules-area">
-                <embed type="image/png" src="assets/images/pikachu.png" class="pikachu" alt="Pikachu">
-                <!-- Button to launch modal (small screen size only) -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#gameModal" id="play">
-                    Tap the Pokeball to Play!<br><img src="assets/images/pokeball.png">
-                  </button>
-                <hr>
-                <h2>How to Play:</h2>
-                <p>Click on each Pokeball to reveal the Pokemon inside. <br>Match two of the same Pokemon to catch them. <br>If the Pokemon don't match, the Pokeballs will reset. Try to complete the game in as few moves and as quickly as possible.
-                </p>
-                <h2>Score: <span id="result"></span></h2>
-                <h2>Time: </h2>
-            </section>
-
-            <section class="col-lg-6 col-md-8 game-area">
-                <div class="grid"> </div>
-                <br>
-                <button type="button" class="restart">Start Again</button>
-                <button type="button" class="quit">Quit Game</button>
-            </section>
+    <div class="container-sm">
+        <div class="row">
 
             <section class="col-lg-3 image-area">
                 <embed type="image/png" src="assets/images/ash.png" class="ash" alt="Ash Ketchum" width="auto">
             </section>
+
+            <section class="col-lg-6 col-md-8 game-area">
+                <div class="grid">
+                    <div class="row">
+                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                    </div>
+                    <div class="row">
+                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                    </div>
+                    <div class="row">
+                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                    </div>
+                    <div class="row">
+                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
+                    </div>
+                </div>
+
+
+                <!-- <div class="grid">
+                    <button onclick="createBoard()" type="button" class="btn btn-primary" id="play">
+                        Tap the Pokeball to Play!<br><img src="assets/images/pokeball.png">
+                      </button>
+                </div> -->
+
+                <br>
+                <h2>Score: <span id="result"></span></h2>
+                <br>
+                <button onclick="createBoard()" type="button" class="restart">Replay Game</button>
+                <!-- <button type="button" class="quit">Quit Game</button> -->
+            </section>
+
+            <section class="col-lg-3 col-md-4 rules-area">
+                <embed type="image/png" src="assets/images/pikachu.png" class="pikachu" alt="Pikachu">
+                <!-- Button to go to game play (small screen size only) -->
+
+                <hr>
+                <h2>How to Play:</h2>
+                <p>Click on each Pokeball to reveal the Pokemon inside. <br>Match two of the same Pokemon to catch them. <br>If the Pokemon don't match, the Pokeballs will reset. Try to complete the game in as few moves and as quickly as possible.
+                </p>
+            </section>
+
+            <!-- <footer class="container"> -->
+            <!-- <div class="row"> -->
+            <!-- <div class="col-2"></div> -->
+            <footer class="col">
+                <p><span>&copy;</span> Danbob81</p>
+            </footer>
+            <!-- <div class="col-2"></div> -->
+            <!-- </div> -->
+            <!-- </footer> -->
         </div>
     </div>
 
-    <footer class="container">
-        <div class="row">
-            <!-- <div class="col-2"></div> -->
-            <div class="col-12 ">
-                <p><span>&copy;</span> Danbob81</p>
-            </div>
-            <!-- <div class="col-2"></div> -->
-        </div>
-    </footer>
-
-    <!-- Modal (small screen size only)-->
-    <!-- <div class="modal fade" id="gameModal" tabindex="-1" aria-labelledby="gameModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen-sm-down">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <button onclick="playGame()" type="button" class="play-game"><img src="assets/images/pokeball.png"><br>Tap the Pokeball to play!</button>
-                   <div class="grid"> </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
 
     <audio id="sound1">
         <source src="assets/sounds/pokeball1.mp3" type="audio/mpeg">
@@ -82,6 +103,10 @@
     <audio id="sound3">
         <source src="assets/sounds/pokeball3.mp3" type="audio/mpeg">
     </audio>
+
+
+    <script src="assets/js/script2.js"></script>
+
 </body>
 
 </html>

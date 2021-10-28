@@ -1,4 +1,6 @@
-// function playGame() {
+// document.addEventListener('DOMContentLoaded', createBoard);
+
+
 
 // card options
 const cardArray = [{
@@ -69,10 +71,17 @@ const cardArray = [{
 
 cardArray.sort(() => 0.5 - Math.random())
 
+
+const resultDisplay = document.querySelector('#result')
+let cardsChosen = []
+let cardsChosenId = []
+let cardsWon = []
+
 // create board
 function createBoard() {
-    let grid = document.querySelector('.grid');
+
     for (let i = 0; i < cardArray.length; i++) {
+        let grid = document.querySelector('.grid')
         let card = document.createElement('img')
         card.setAttribute('src', 'assets/images/pokeball.png')
         card.setAttribute('data-id', i)
@@ -80,13 +89,6 @@ function createBoard() {
         grid.appendChild(card)
     }
 }
-
-
-const resultDisplay = document.querySelector('#result')
-let cardsChosen = []
-let cardsChosenId = []
-let cardsWon = []
-
 
 
 // check for matches
@@ -112,7 +114,7 @@ function checkForMatch() {
     cardsChosenId = []
     resultDisplay.textContent = cardsWon.length
     if (cardsWon.length === cardArray.length / 2) {
-        resultDisplay.textContent = ' Congratulaions! You found them all!'
+        resultDisplay.textContent = ' Congratulations! You found them all!'
     }
 }
 
@@ -127,6 +129,8 @@ function flipCard() {
         setTimeout(checkForMatch, 500)
     }
 }
+
+
 // card sounds
 
 function playAudio1() {
@@ -143,20 +147,3 @@ function playAudio3() {
     let sound3 = document.getElementById('sound3')
     sound3.play();
 }
-
-document.addEventListener('DOMContentLoaded', createBoard);
-
-// createBoard()
-// }
-
-// document.addEventListener('DOMContentLoaded', () => {
-//     if (window.matchMedia('(min-width: 576px)').matches) {
-//         playGame()
-//     } else {
-//         playGame2()
-//     }
-// })
-
-// window.addEventListener('resize', function() {
-
-// })
