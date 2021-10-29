@@ -86,8 +86,6 @@ function createBoard() {
         grid.appendChild(card)
         playAudio4()
     }
-
-
 }
 
 
@@ -116,12 +114,11 @@ function checkForMatch() {
     if (cardsWon.length === cardArray.length / 2) {
         finish.innerHTML = 'Congratulations! You found them all!';
         document.getElementById('congrats').appendChild(finish);
-
         playAudio5()
     }
 }
 
-// flip your card
+// flip the card
 function flipCard() {
     let cardId = this.getAttribute('data-id')
     cardsChosen.push(cardArray[cardId].name)
@@ -161,6 +158,7 @@ function playAudio5() {
     sound5.play();
 }
 
+// reload page
 function restart() {
     location.reload();
 }
