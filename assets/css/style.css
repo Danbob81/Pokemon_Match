@@ -1,125 +1,164 @@
- * {
-     padding: 0px;
-     margin: 0px;
-     border: 0px;
-     max-height: 100vh;
- }
- 
- body {
-     font-family: 'Architects Daughter', cursive;
- }
- 
- .logo {
-     padding: .625rem;
-     text-align: center;
- }
- 
- .image-area {
-     text-align: center;
-     color: white;
-     background-color: #a19e9e;
-     border: 5px solid #ef4036;
-     border-radius: 1.875rem;
- }
- 
- .ash {
-     padding-top: 15%;
- }
- 
- .rules-area {
-     text-align: center;
-     color: #fff;
-     background-color: #00478c;
-     border: 5px solid #f0cf00;
-     border-radius: 1.875rem;
- }
- 
- .game-area {
-     text-align: center;
-     color: #00478d;
-     background-color: #f0cf00;
-     border: 5px solid #00478d;
-     border-radius: 1.875rem;
- }
- 
- .grid {
-     align-items: center;
-     justify-content: center;
-     display: flex;
-     flex-wrap: wrap;
-     flex-direction: row-reverse;
-     height: auto;
-     width: auto;
-     padding: 10%;
-     /* cursor: pointer; */
- }
- 
- footer {
-     text-align: center;
-     color: #fff;
-     background-color: #ef4036;
-     border: 5px solid #00478c;
-     border-radius: 1.875rem;
- }
- 
- #score {
-     display: none;
- }
- 
- #restart {
-     color: #fff;
-     background-color: #ef4036;
-     border-color: #ffffff;
-     border-radius: 50rem;
-     display: none;
- }
- 
- #play {
-     display: contents;
- }
- 
- #replay {
-     display: none;
- }
- 
- @media screen and (max-width: 992px) {
-     .image-area {
-         display: none;
-     }
-     footer {
-         position: relative;
-         margin-top: 2%;
-     }
- }
- 
- @media screen and (max-width: 576px) {
-     footer {
-         position: relative;
-         margin-top: 2%;
-     }
-     #play {
-         display: contents;
-     }
-     .grid {
-         align-items: flex-start;
-         justify-content: center;
-         height: auto;
-         width: auto;
-         padding: 0rem;
-         margin: auto;
-         padding-top: 5%;
-     }
- }
- 
- @media screen and (min-width: 1400px) {
-     .grid {
-         align-items: center;
-         justify-content: center;
-         display: flex;
-         flex-wrap: wrap;
-         flex-direction: row-reverse;
-         height: 400px;
-         width: 600px;
-         padding: 10%;
-     }
- }
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    max-height: 100vh;
+}
+
+body {
+    font-family: 'Architects Daughter', cursive, sans-serif;
+    font-size: 1.25rem;
+    letter-spacing: .125rem;
+}
+
+
+/*....................Heading */
+
+.logo {
+    padding: .625rem;
+    text-align: center;
+}
+
+
+/*....................Main body */
+
+
+/* Image section (at larger screen sizes) */
+
+.image-area {
+    text-align: center;
+    color: white;
+    background-color: #a19e9e;
+    border: 5px solid #ef4036;
+    border-radius: 1.875rem;
+}
+
+.ash {
+    padding-top: 15%;
+}
+
+
+/* Game play instructions section */
+
+.rules-area {
+    text-align: center;
+    color: #fff;
+    background-color: #00478c;
+    border: 5px solid #f0cf00;
+    border-radius: 1.875rem;
+}
+
+
+/* Main game play section */
+
+.game-area {
+    text-align: center;
+    color: #00478d;
+    background-color: #f0cf00;
+    border: 5px solid #00478d;
+    border-radius: 1.875rem;
+}
+
+.btn-primary {
+    font-size: 25px;
+    color: #00478c;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    font-weight: bold;
+}
+
+.grid {
+    align-items: center;
+    justify-content: center;
+    display: none;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    height: auto;
+    width: auto;
+    padding: 10%;
+}
+
+
+/* For JS and JQuery functionality */
+
+#score {
+    display: none;
+}
+
+#restart {
+    color: #fff;
+    background-color: #ef4036;
+    border: solid 2px #00478c;
+    border-radius: 16px;
+    display: none;
+    padding: 2%;
+    margin: 2%;
+}
+
+#play {
+    display: contents;
+}
+
+#replay {
+    display: none;
+}
+
+#congrats {
+    display: none;
+}
+
+
+/* Footer section */
+
+footer {
+    text-align: center;
+    color: #fff;
+    background-color: #ef4036;
+    border: 5px solid #00478c;
+    border-radius: 1.875rem;
+}
+
+
+/*....................Media Queries */
+
+@media screen and (max-width: 992px) {
+    .image-area {
+        display: none;
+    }
+    footer {
+        position: relative;
+        margin-top: 2%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    footer {
+        position: relative;
+        margin-top: 2%;
+    }
+    #play {
+        display: contents;
+    }
+    .grid {
+        align-items: flex-start;
+        justify-content: center;
+        height: auto;
+        width: auto;
+        padding: 0rem;
+        margin: auto;
+        padding-top: 5%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .grid {
+        align-items: center;
+        justify-content: center;
+        display: none;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        height: 400px;
+        width: 600px;
+        padding: 10%;
+    }
+}

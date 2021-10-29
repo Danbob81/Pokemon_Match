@@ -11,8 +11,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- <link rel="stylesheet" href="assets/css/style2.css"> -->
-    <script src="assets/js/jquery_functions.js"></script>
     <title>Pokemon Match | Gotta match 'em all!</title>
 </head>
 
@@ -24,16 +22,19 @@
     <div class="container-sm">
         <div class="row">
 
+            <!-- image to show on larger screen sizes -->
+
             <section class="col-lg-3 image-area">
                 <embed type="image/png" src="assets/images/ash.png" class="ash" alt="Ash Ketchum" width="auto">
             </section>
 
+            <!-- game play area -->
+
             <section class="col-lg-6 col-md-8 game-area">
                 <div class="grid"></div>
                 <button onclick="createBoard()" type="button" class="btn btn-primary" id="play">
-                        Tap the Pokeball to Play!<br><img src="assets/images/pokeball.png">
+                        Tap the Pokeball to Play!<br><br><img src="assets/images/pokeball.png" id="play-ball">
                       </button>
-
                 <br>
                 <h2 id="score">Score: <span id="result"></span></h2>
                 <br>
@@ -41,15 +42,17 @@
                 <button onclick="restart()" type="button" id="restart">Restart Game</button>
             </section>
 
+            <!-- game instructions -->
+
             <section class="col-lg-3 col-md-4 rules-area">
                 <embed type="image/png" src="assets/images/pikachu.png" class="pikachu" alt="Pikachu">
-                <!-- Button to go to game play (small screen size only) -->
-
                 <hr>
                 <h2>How to Play:</h2>
-                <p>Click on each Pokeball to reveal the Pokemon inside. <br>Match two of the same Pokemon to catch them. <br>If the Pokemon don't match, the Pokeballs will reset. Try to complete the game in as few moves and as quickly as possible.
+                <p>Click on each Pokeball to reveal the Pokemon inside. <br>Match two of the same Pokemon to catch them. <br>If the Pokemon don't match, the Pokeballs will reset.<br>Have fun!.
                 </p>
             </section>
+
+            <!-- footer -->
 
             <footer class="col">
                 <p><span>&copy;</span> Danbob81</p>
@@ -58,6 +61,7 @@
         </div>
     </div>
 
+    <!-- sound files to be played during game -->
 
     <audio id="sound1">
         <source src="assets/sounds/pokeball1.mp3" type="audio/mpeg">
@@ -75,8 +79,9 @@
         <source src="assets/sounds/pokemon_go_level_up.mp3" type="audio/mpeg">
     </audio>
 
+
     <script src="assets/js/script.js"></script>
-    <!-- <script src="assets/js/script2.js"></script> -->
+    <script src="assets/js/jquery_functions.js"></script>
 
 </body>
 
