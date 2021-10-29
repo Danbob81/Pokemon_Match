@@ -1,7 +1,3 @@
-// document.addEventListener('DOMContentLoaded', createBoard);
-
-
-
 // card options
 const cardArray = [{
         name: 'bulbasaur',
@@ -76,6 +72,7 @@ const resultDisplay = document.querySelector('#result')
 let cardsChosen = []
 let cardsChosenId = []
 let cardsWon = []
+let finish = document.createElement('p')
 
 // create board
 function createBoard() {
@@ -87,7 +84,10 @@ function createBoard() {
         card.setAttribute('data-id', i)
         card.addEventListener('click', flipCard)
         grid.appendChild(card)
+        playAudio4()
     }
+
+
 }
 
 
@@ -114,7 +114,10 @@ function checkForMatch() {
     cardsChosenId = []
     resultDisplay.textContent = cardsWon.length
     if (cardsWon.length === cardArray.length / 2) {
-        resultDisplay.textContent = ' Congratulations! You found them all!'
+        finish.innerHTML = 'Congratulations! You found them all!';
+        document.getElementById('congrats').appendChild(finish);
+
+        playAudio5()
     }
 }
 
@@ -131,7 +134,7 @@ function flipCard() {
 }
 
 
-// card sounds
+// game sounds
 
 function playAudio1() {
     let sound1 = document.getElementById('sound1')
@@ -146,4 +149,18 @@ function playAudio2() {
 function playAudio3() {
     let sound3 = document.getElementById('sound3')
     sound3.play();
+}
+
+function playAudio4() {
+    let sound4 = document.getElementById('sound4')
+    sound4.play();
+}
+
+function playAudio5() {
+    let sound5 = document.getElementById('sound5')
+    sound5.play();
+}
+
+function restart() {
+    location.reload();
 }

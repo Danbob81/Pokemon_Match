@@ -11,8 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- <script src="assets/js/script.js"></script> -->
-    <link rel="stylesheet" href="assets/css/style2.css">
+    <!-- <link rel="stylesheet" href="assets/css/style2.css"> -->
     <script src="assets/js/jquery_functions.js"></script>
     <title>Pokemon Match | Gotta match 'em all!</title>
 </head>
@@ -30,45 +29,16 @@
             </section>
 
             <section class="col-lg-6 col-md-8 game-area">
-                <div class="grid">
-                    <div class="row">
-                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-                    </div>
-                    <div class="row">
-                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-                    </div>
-                    <div class="row">
-                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-                    </div>
-                    <div class="row">
-                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-                        <div class="card color-hidden" onclick="onCardClicked(event)"></div>
-                    </div>
-                </div>
-
-
-                <!-- <div class="grid">
-                    <button onclick="createBoard()" type="button" class="btn btn-primary" id="play">
+                <div class="grid"></div>
+                <button onclick="createBoard()" type="button" class="btn btn-primary" id="play">
                         Tap the Pokeball to Play!<br><img src="assets/images/pokeball.png">
                       </button>
-                </div> -->
 
                 <br>
-                <h2>Score: <span id="result"></span></h2>
+                <h2 id="score">Score: <span id="result"></span></h2>
                 <br>
-                <button onclick="createBoard()" type="button" class="restart">Replay Game</button>
-                <!-- <button type="button" class="quit">Quit Game</button> -->
+                <h2 id="congrats"><button onclick="restart()" type="button" id="replay">Play Again</button></h2>
+                <button onclick="restart()" type="button" id="restart">Restart Game</button>
             </section>
 
             <section class="col-lg-3 col-md-4 rules-area">
@@ -81,15 +51,10 @@
                 </p>
             </section>
 
-            <!-- <footer class="container"> -->
-            <!-- <div class="row"> -->
-            <!-- <div class="col-2"></div> -->
             <footer class="col">
                 <p><span>&copy;</span> Danbob81</p>
             </footer>
-            <!-- <div class="col-2"></div> -->
-            <!-- </div> -->
-            <!-- </footer> -->
+
         </div>
     </div>
 
@@ -103,9 +68,15 @@
     <audio id="sound3">
         <source src="assets/sounds/pokeball3.mp3" type="audio/mpeg">
     </audio>
+    <audio id="sound4">
+        <source src="assets/sounds/pokeball_release.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="sound5">
+        <source src="assets/sounds/pokemon_go_level_up.mp3" type="audio/mpeg">
+    </audio>
 
-
-    <script src="assets/js/script2.js"></script>
+    <script src="assets/js/script.js"></script>
+    <!-- <script src="assets/js/script2.js"></script> -->
 
 </body>
 
