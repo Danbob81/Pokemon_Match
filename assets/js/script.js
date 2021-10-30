@@ -74,6 +74,7 @@ let cardsChosenId = []
 let cardsWon = []
 let finish = document.createElement('p')
 
+
 // create board
 function createBoard() {
 
@@ -87,7 +88,6 @@ function createBoard() {
         playAudio4()
     }
 }
-
 
 // check for matches
 function checkForMatch() {
@@ -130,9 +130,7 @@ function flipCard() {
     }
 }
 
-
 // game sounds
-
 function playAudio1() {
     let sound1 = document.getElementById('sound1')
     sound1.play();

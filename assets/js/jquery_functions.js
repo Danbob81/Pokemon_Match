@@ -17,8 +17,7 @@ $(document).ready(function() {
         $('#restart').show();
         $('#score').show();
         $('#congrats').show();
+        $('img').css('width', '25%')
     })
-
-
 
 });

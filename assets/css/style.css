@@ -14,7 +14,7 @@ body {
 
 /*....................Heading */
 
-.logo {
+.heading {
     padding: .625rem;
     text-align: center;
 }
@@ -132,6 +132,9 @@ footer {
 }
 
 @media screen and (max-width: 576px) {
+    .logo {
+        width: 75%;
+    }
     footer {
         position: relative;
         margin-top: 2%;
