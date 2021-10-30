@@ -11,13 +11,14 @@ $(document).ready(function() {
     // score and restart button also to be displayed 
     // when game grid is displayed.
     // congratulations message to display when game completed.
-    $('#play').click(function() {
-        $('#play').hide();
+    $('.play-button').click(function() {
+        $('.play-button').hide();
         $('.grid').show();
         $('#restart').show();
         $('#score').show();
         $('#congrats').show();
-        $('img').css('width', '25%')
+        $('img').css('width', '25%');
+        $('img').css('cursor', 'pointer');
     })
 
 });

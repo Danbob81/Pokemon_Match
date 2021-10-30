@@ -98,6 +98,7 @@ function checkForMatch() {
     if (optionOneId === optionTwoId) {
         cards[optionOneId].setAttribute('src', 'assets/images/pokeball.png')
         cards[optionTwoId].setAttribute('src', 'assets/images/pokeball.png')
+        playAudio6()
     } else if (cardsChosen[0] === cardsChosen[1]) {
         cards[optionOneId].removeEventListener('click', flipCard, )
         cards[optionTwoId].removeEventListener('click', flipCard, )
@@ -154,6 +155,11 @@ function playAudio4() {
 function playAudio5() {
     let sound5 = document.getElementById('sound5')
     sound5.play();
+}
+
+function playAudio6() {
+    let sound6 = document.getElementById('sound6')
+    sound6.play();
 }
 
 // reload page

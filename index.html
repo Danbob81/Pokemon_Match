@@ -32,21 +32,21 @@
 
             <section class="col-lg-6 col-md-8 game-area">
                 <div class="grid"></div>
-                <button onclick="createBoard()" type="button" class="btn btn-primary" id="play">
+                <button onclick="createBoard()" type="button" class="play-button">
                         Tap the Pokeball to Play!<br><br><img src="assets/images/pokeball.png" id="play-ball">
                       </button>
                 <br>
                 <h2 id="score">Score: <span id="result"></span></h2>
                 <br>
                 <h2 id="congrats"><button onclick="restart()" type="button" id="replay">Play Again</button></h2>
-                <button onclick="restart()" type="button" id="restart">Restart Game</button>
+                <button onclick="restart()" type="button" id="restart">Replay Game</button>
             </section>
 
             <!-- game instructions -->
 
             <section class="col-lg-3 col-md-4 rules-area">
                 <embed type="image/png" src="assets/images/pikachu.png" class="pikachu" alt="Pikachu">
-                <hr>
+                <br>
                 <h2>How to Play:</h2>
                 <p>Click on each Pokeball to reveal the Pokemon inside. <br>Match two of the same Pokemon to catch them. <br>If the Pokemon don't match, the Pokeballs will reset.<br>Have fun!.
                 </p>
@@ -73,13 +73,17 @@
         <source src="assets/sounds/pokeball3.mp3" type="audio/mpeg">
     </audio>
     <audio id="sound4">
-        <source src="assets/sounds/pokeball_release.mp3" type="audio/mpeg">
+        <source src="assets/sounds/pokemon_joins_team.mp3" type="audio/mpeg">
     </audio>
     <audio id="sound5">
         <source src="assets/sounds/pokemon_go_level_up.mp3" type="audio/mpeg">
     </audio>
+    <audio id="sound6">
+        <source src="assets/sounds/pokemon_go_r_close.mp3" type="audio/mpeg">
+    </audio>
 
     <!-- JS/JQuery links -->
+
     <script src="assets/js/script.js"></script>
     <script src="assets/js/jquery_functions.js"></script>
 

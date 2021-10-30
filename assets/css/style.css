@@ -11,6 +11,10 @@ body {
     letter-spacing: .125rem;
 }
 
+p {
+    margin: 10px;
+}
+
 
 /*....................Heading */
 
@@ -31,6 +35,7 @@ body {
     background-color: #a19e9e;
     border: 5px solid #ef4036;
     border-radius: 1.875rem;
+    padding: 5% 0;
 }
 
 .ash {
@@ -46,6 +51,7 @@ body {
     background-color: #00478c;
     border: 5px solid #f0cf00;
     border-radius: 1.875rem;
+    padding: 5% 0;
 }
 
 
@@ -59,12 +65,17 @@ body {
     border-radius: 1.875rem;
 }
 
-.btn-primary {
-    font-size: 25px;
+.play-button {
+    margin: 20%;
+    background-color: transparent;
     color: #00478c;
-    background-color: #0d6efd;
-    border-color: #0d6efd;
+    text-align: center;
     font-weight: bold;
+    font-size: 1.5625rem;
+}
+
+.play-button:hover {
+    color: #fff;
 }
 
 .grid {
@@ -93,10 +104,6 @@ body {
     display: none;
     padding: 2%;
     margin: 2%;
-}
-
-#play {
-    display: contents;
 }
 
 #replay {
@@ -135,12 +142,13 @@ footer {
     .logo {
         width: 75%;
     }
-    footer {
-        position: relative;
-        margin-top: 2%;
-    }
-    #play {
-        display: contents;
+    .play {
+        margin: 0%;
+        background-color: transparent;
+        color: #00478c;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.5625rem;
     }
     .grid {
         align-items: flex-start;
@@ -150,6 +158,10 @@ footer {
         padding: 0rem;
         margin: auto;
         padding-top: 5%;
+    }
+    footer {
+        position: relative;
+        margin-top: 2%;
     }
 }
 
@@ -164,4 +176,7 @@ footer {
         width: 600px;
         padding: 10%;
     }
+    /* .rules-area {
+        padding: 10% 0;
+    } */
 }
