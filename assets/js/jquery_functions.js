@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     // play button animation
     $("#play-ball").hover(function() {
-        $(this).animate({ height: '105px', width: '105px' }),
+        $(this).animate({ height: '103px', width: '103px' }),
             $(this).animate({ height: '100px', width: '100px' });
     });
 

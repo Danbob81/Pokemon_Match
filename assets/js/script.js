@@ -1,5 +1,10 @@
-// card options
-const cardArray = [{
+/*code based on YouTube video tutorial: https://www.youtube.com/watch?v=lhNdUVh3qCc&t=115s 
+from https://www.freecodecamp.org/news/javascript-projects-for-beginners/#how-to-create-seven-classic-games-with-ania-kubow
+*/
+
+// VARIABLES
+
+const cardArray = [{ // array to hold card options
         name: 'bulbasaur',
         img: 'assets/images/bulbasaur.png'
     },
@@ -49,17 +54,17 @@ const cardArray = [{
     },
 ]
 
-cardArray.sort(() => 0.5 - Math.random())
-
-
 const resultDisplay = document.querySelector('#result')
 let cardsChosen = []
 let cardsChosenId = []
 let cardsWon = []
 let finish = document.createElement('p')
 
+// FUNCTIONS
 
 // create board
+cardArray.sort(() => 0.5 - Math.random()) //to make card layout appear random
+
 function createBoard() {
 
     for (let i = 0; i < cardArray.length; i++) {
@@ -79,16 +84,16 @@ function checkForMatch() {
     const optionOneId = cardsChosenId[0]
     const optionTwoId = cardsChosenId[1]
 
-    if (optionOneId === optionTwoId) {
+    if (optionOneId === optionTwoId) { //if same card clicked, notify user by playing a sound and resetting cards
         cards[optionOneId].setAttribute('src', 'assets/images/pokeball.png')
         cards[optionTwoId].setAttribute('src', 'assets/images/pokeball.png')
         playAudio('same-card')
-    } else if (cardsChosen[0] === cardsChosen[1]) {
+    } else if (cardsChosen[0] === cardsChosen[1]) { //if cards match, stop from being clicked again and play sound
         cards[optionOneId].removeEventListener('click', flipCard, )
         cards[optionTwoId].removeEventListener('click', flipCard, )
         cardsWon.push(cardsChosen)
         playAudio('card-match')
-    } else {
+    } else { //if cards don't match, reset cards to be clicked again, also play sound
         cards[optionOneId].setAttribute('src', 'assets/images/pokeball.png')
         cards[optionTwoId].setAttribute('src', 'assets/images/pokeball.png')
         playAudio('no-match')
@@ -96,7 +101,7 @@ function checkForMatch() {
     cardsChosen = []
     cardsChosenId = []
     resultDisplay.textContent = cardsWon.length
-    if (cardsWon.length === cardArray.length / 2) {
+    if (cardsWon.length === cardArray.length / 2) { //if all matches found, show message and play sound
         finish.innerHTML = 'Congratulations! You found them all!';
         document.getElementById('congrats').appendChild(finish);
         playAudio('game-finish')
@@ -115,7 +120,7 @@ function flipCard() {
     }
 }
 
-// game sounds
+// game sounds - to be played under certain conditions during game play
 function playAudio(audioElementId) {
     let soundElement = document.getElementById(audioElementId);
     soundElement.play();
