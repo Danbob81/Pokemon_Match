@@ -39,22 +39,6 @@ const cardArray = [{
         name: 'pikachu',
         img: 'assets/images/pikachu.png'
     },
-    // {
-    //     name: 'psyduck',
-    //     img: 'assets/images/psyduck.png'
-    // },
-    // {
-    //     name: 'psyduck',
-    //     img: 'assets/images/psyduck.png'
-    // },
-    // {
-    //     name: 'snorlax',
-    //     img: 'assets/images/snorlax.png'
-    // },
-    // {
-    //     name: 'snorlax',
-    //     img: 'assets/images/snorlax.png'
-    // },
     {
         name: 'squirtle',
         img: 'assets/images/squirtle.png'
@@ -85,7 +69,7 @@ function createBoard() {
         card.setAttribute('data-id', i)
         card.addEventListener('click', flipCard)
         grid.appendChild(card)
-        playAudio4()
+        playAudio('game-load')
     }
 }
 
@@ -98,16 +82,16 @@ function checkForMatch() {
     if (optionOneId === optionTwoId) {
         cards[optionOneId].setAttribute('src', 'assets/images/pokeball.png')
         cards[optionTwoId].setAttribute('src', 'assets/images/pokeball.png')
-        playAudio6()
+        playAudio('same-card')
     } else if (cardsChosen[0] === cardsChosen[1]) {
         cards[optionOneId].removeEventListener('click', flipCard, )
         cards[optionTwoId].removeEventListener('click', flipCard, )
         cardsWon.push(cardsChosen)
-        playAudio1()
+        playAudio('card-match')
     } else {
         cards[optionOneId].setAttribute('src', 'assets/images/pokeball.png')
         cards[optionTwoId].setAttribute('src', 'assets/images/pokeball.png')
-        playAudio3()
+        playAudio('no-match')
     }
     cardsChosen = []
     cardsChosenId = []
@@ -115,7 +99,7 @@ function checkForMatch() {
     if (cardsWon.length === cardArray.length / 2) {
         finish.innerHTML = 'Congratulations! You found them all!';
         document.getElementById('congrats').appendChild(finish);
-        playAudio5()
+        playAudio('game-finish')
     }
 }
 
@@ -124,7 +108,7 @@ function flipCard() {
     let cardId = this.getAttribute('data-id')
     cardsChosen.push(cardArray[cardId].name)
     cardsChosenId.push(cardId)
-    playAudio2()
+    playAudio('card-flip')
     this.setAttribute('src', cardArray[cardId].img)
     if (cardsChosen.length === 2) {
         setTimeout(checkForMatch, 500)
@@ -132,34 +116,9 @@ function flipCard() {
 }
 
 // game sounds
-function playAudio1() {
-    let sound1 = document.getElementById('sound1')
-    sound1.play();
-}
-
-function playAudio2() {
-    let sound2 = document.getElementById('sound2')
-    sound2.play();
-}
-
-function playAudio3() {
-    let sound3 = document.getElementById('sound3')
-    sound3.play();
-}
-
-function playAudio4() {
-    let sound4 = document.getElementById('sound4')
-    sound4.play();
-}
-
-function playAudio5() {
-    let sound5 = document.getElementById('sound5')
-    sound5.play();
-}
-
-function playAudio6() {
-    let sound6 = document.getElementById('sound6')
-    sound6.play();
+function playAudio(audioElementId) {
+    let soundElement = document.getElementById(audioElementId);
+    soundElement.play();
 }
 
 // reload page
