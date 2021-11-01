@@ -19,7 +19,7 @@ This is a simple memory match game in which the user tests their memory skills b
     - ### Colour scheme:
         - Colours used on the game to match the blue, yellow and red of the official Pokemon colour scheme
     - ### Typography:
-        - Google Fonts - [ArchitectsDaughter](https://fonts.google.com/specimen/Architects+Daughter#standard-styles) 
+        - Google Fonts - [ArchitectsDaughter](https://bit.ly/3EwQP1N)
 
 - ### Wireframes
     - ### [(link to wireframes pdf)]()
@@ -45,15 +45,14 @@ This is a simple memory match game in which the user tests their memory skills b
     - Javascript
 
 - ### Frameworks, libraries and programmes:
-    - Google Fonts
-    - Bootstrap
-    - JQuery
-    - Git
-    - Github
-    - VS Code
-    - Balsamiq
-    - WavePad Audio Editor (to edit audio files)
-    - Paint (to edit image files)
+    - Google Fonts - font used [ArchitectsDaughter](https://bit.ly/3EwQP1N)
+    - Bootstrap - used to create layout
+    - JQuery - for additional JS functions
+    - Git & Github - for version control
+    - VS Code - IDE for writing HTML/CSS/Javascript/JQuery and file management
+    - Balsamiq - for wireframes
+    - WavePad Audio Editor - to edit audio files
+    - Paint - to edit image files
     
 ## Testing
 
@@ -79,9 +78,12 @@ This is a simple memory match game in which the user tests their memory skills b
 
 ## Deployment
 ### Github Pages
-- 
-- 
-- 
+- I deployed the site to Github Pages using the following process:
+    - Click the 'Settings' tab in the GitHub repository
+    - Select 'Pages' in the left hand menu
+    - Under the heading of 'Source', select 'Master Branch' from the drop-down menu
+    - Click 'Save'
+
 
 ## Credits
 
@@ -90,13 +92,15 @@ This is a simple memory match game in which the user tests their memory skills b
 - 
 - 
 ### Media:
-- Pokemon logo taken from [pngitem.com](https://www.pngitem.com/middle/JTboox_gotta-catch-em-all-transparent-pokemon-logo-pokemon/)
-- Ash image taken from [pngitem.com](https://www.pngitem.com/middle/ibxbw_pokemon-ash-ash-pokemon-i-choose-you-hd/)
+- Pokemon logo taken from [pngitem.com](https://bit.ly/2ZPHsvp)
+- Ash image taken from [pngitem.com](https://bit.ly/3jWp1Mf)
 - Pokemon images taken from [The Official Pokemon Website](https://bit.ly/3w0eDIa)
 - Pokemon sounds taken from Zedge 
-    - [Pokeball Catch by julianoc](https://www.zedge.net/ringtone/9c925805-3ae6-3123-8508-67d7d7ed90ac) - note: I edited the original mp3 file to create three separate files using WavePad Audio Editor (free download from Microsoft Store)
-    - 
-- 
+    - [Pokeball Catch by julianoc](https://bit.ly/3pX7PtN) - note: I edited the original mp3 file to create three separate files using WavePad Audio Editor (free download from Microsoft Store)
+    - [pokemon go R Close by Sivilian](https://bit.ly/3bt0bPF)
+    - [Pokemon Joins Team by AlberStelar](https://bit.ly/3mArm12)
+    - [pokemon GO level up by Coolbuddyn](https://bit.ly/3BtOToV)
+
 ### Acknowledgements:
 - 
 - 
