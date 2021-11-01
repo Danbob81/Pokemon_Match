@@ -21,6 +21,6 @@ $(document).ready(function() {
         $('#congrats').show();
         $('img').css('width', '25%');
         $('img').css('cursor', 'pointer');
-    })
+    });
 
 });

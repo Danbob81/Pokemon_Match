@@ -3,7 +3,7 @@
 
 This is a simple memory match game in which the user tests their memory skills by matching up pairs of the same Pokemon by turning over cards on a board to reveal the hidden Pokemon character. The game is complete when all pairs have been matched.
 
-[Play the game here.]()
+Play the game [here.](https://danbob81.github.io/Pokemon_Match/)
 
 <h4 align="center"><img src="docs/" alt="site image"></h4>
 
@@ -57,9 +57,9 @@ This is a simple memory match game in which the user tests their memory skills b
 ## Testing
 
 - ### Validator testing:
-    - HTML - [W3C Validator](https://bit.ly/31qLrPD)
-    - CSS - []()
-    - Javascript - []()
+    - HTML - [W3C Validator](https://bit.ly/31qLrPD) - passed
+    - CSS - [(Jigsaw) validator](https://bit.ly/3nMSs4G) - passed
+    - Javascript - [JSHint](https://jshint.com/) - passed
 
 - ### User stories' testing:
     -
