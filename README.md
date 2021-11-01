@@ -22,7 +22,7 @@ This is a simple memory match game in which the user tests their memory skills b
         - Google Fonts - [ArchitectsDaughter](https://bit.ly/3EwQP1N)
 
 - ### Wireframes
-    - ### [(link to wireframes pdf)]()
+    - ### [(link to wireframes pdf)](docs/readme_items/pokemon_match_wireframe.pdf)
 
 ## Features
 
@@ -52,14 +52,14 @@ This is a simple memory match game in which the user tests their memory skills b
     - VS Code - IDE for writing HTML/CSS/Javascript/JQuery and file management
     - Balsamiq - for wireframes
     - WavePad Audio Editor - to edit audio files
-    - Paint - to edit image files
+    - Paint -  to edit image files
     
 ## Testing
 
 - ### Validator testing:
-    -
-    -
-    -
+    - HTML - [W3C Validator](https://bit.ly/31qLrPD)
+    - CSS - []()
+    - Javascript - []()
 
 - ### User stories' testing:
     -

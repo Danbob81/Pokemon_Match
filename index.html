@@ -15,25 +15,25 @@
 </head>
 
 <body>
-    <heading class="col">
-        <h1 class="heading"><embed type="image/png" src="assets/images/pokemonlogo.png" alt="pokemon logo" class="logo"></h1>
-    </heading>
+    <header class="col">
+        <div class="heading"><embed type="image/png" src="assets/images/pokemonlogo.png" alt="pokemon logo" class="logo"></div>
+    </header>
 
-    <div class="container-sm">
+    <main class="container-sm">
         <div class="row">
 
             <!-- image area to show on larger screen sizes only -->
 
-            <section class="col-lg-3 image-area">
-                <embed type="image/png" src="assets/images/ash.png" class="ash" alt="Ash Ketchum" width="auto">
-            </section>
+            <div class="col-lg-3 image-area">
+                <embed type="image/png" src="assets/images/ash.png" class="ash" alt="Ash Ketchum">
+            </div>
 
             <!-- game play area -->
 
             <section class="col-lg-6 col-md-8 game-area">
                 <div class="grid"></div>
                 <button onclick="createBoard()" type="button" class="play-button">
-                        Tap the Pokeball to Play!<br><br><img src="assets/images/pokeball.png" id="play-ball">
+                        Tap the Pokeball to Play!<br><br><img src="assets/images/pokeball.png" id="play-ball" alt="pokeball">
                       </button>
                 <br>
                 <h2 id="score">Score: <span id="result"></span></h2>
@@ -59,7 +59,7 @@
             </footer>
 
         </div>
-    </div>
+    </main>
 
     <!-- sound files to be played during game -->
 
