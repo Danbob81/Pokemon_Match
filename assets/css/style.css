@@ -36,6 +36,7 @@ p {
     border: 5px solid #ef4036;
     border-radius: 1.875rem;
     padding: 5% 0;
+    margin-bottom: 3.5px;
 }
 
 .ash {
@@ -52,6 +53,7 @@ p {
     border: 5px solid #f0cf00;
     border-radius: 1.875rem;
     padding: 5% 0;
+    margin-bottom: 3.5px;
 }
 
 
@@ -63,9 +65,10 @@ p {
     background-color: #f0cf00;
     border: 5px solid #00478d;
     border-radius: 1.875rem;
+    margin-bottom: 3.5px;
 }
 
-.play-button {
+#play-button {
     margin: 20%;
     background-color: transparent;
     color: #00478c;
@@ -74,7 +77,7 @@ p {
     font-size: 1.5625rem;
 }
 
-.play-button:hover {
+#play-button:hover {
     color: #fff;
 }
 
@@ -106,9 +109,10 @@ p {
     margin: 2%;
 }
 
-#replay {
+
+/* #replay {
     display: none;
-}
+} */
 
 #congrats {
     display: none;
@@ -123,6 +127,42 @@ footer {
     background-color: #ef4036;
     border: 5px solid #00478c;
     border-radius: 1.875rem;
+}
+
+
+/* Modal */
+
+.modal-content {
+    color: #fff;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #00478c;
+    background-clip: padding-box;
+    border: 5px solid #f0cf00;
+    border-radius: 1.875rem;
+    outline: 0;
+}
+
+.modal-yes {
+    color: #fff;
+    background-color: #00478c;
+    border: solid 2px #f0cf00;
+    border-radius: 16px;
+    padding: 2%;
+    margin: 2%;
+}
+
+.modal-no {
+    color: #fff;
+    background-color: #00478c;
+    border: solid 2px #ef4036;
+    border-radius: 16px;
+    padding: 2%;
+    margin: 2%;
 }
 
 

@@ -24,26 +24,6 @@
     <main class="container-sm">
         <div class="row">
 
-            <!-- image area to show on larger screen sizes only -->
-
-            <div class="col-lg-3 image-area">
-                <embed type="image/png" src="assets/images/ash.png" class="ash" alt="Ash Ketchum">
-            </div>
-
-            <!-- game play area -->
-
-            <section class="col-lg-6 col-md-8 game-area">
-                <div class="grid"></div>
-                <button onclick="createBoard()" type="button" class="play-button">
-                        Tap the Pokeball to Play!<br><br><img src="assets/images/pokeball.png" id="play-ball" alt="pokeball">
-                      </button>
-                <br>
-                <h2 id="score">Score: <span id="result"></span></h2>
-                <br>
-                <h2 id="congrats"><button onclick="restart()" type="button" id="replay">Play Again</button></h2>
-                <button onclick="restart()" type="button" id="restart">Replay Game</button>
-            </section>
-
             <!-- game instructions -->
 
             <section class="col-lg-3 col-md-4 rules-area">
@@ -54,6 +34,26 @@
                 </p>
             </section>
 
+            <!-- game play area -->
+
+            <section class="col-lg-6 col-md-8 game-area">
+                <div class="grid"></div>
+                <button onclick="createBoard()" type="button" id="play-button">
+                        Tap the Pokeball to Play!<br><br><img src="assets/images/pokeball.png" id="play-ball" alt="pokeball">
+                      </button>
+                <br>
+                <h2 id="score">Score: <span id="result"></span></h2>
+                <br>
+                <h2 id="congrats"></h2>
+                <button type="button" id="restart" data-bs-toggle="modal" data-bs-target="#confirmModal">Replay Game</button>
+            </section>
+
+            <!-- image area to show on larger screen sizes only -->
+
+            <div class="col-lg-3 image-area">
+                <embed type="image/png" src="assets/images/ash.png" class="ash" alt="Ash Ketchum">
+            </div>
+
             <!-- footer -->
 
             <footer class="col">
@@ -62,6 +62,21 @@
 
         </div>
     </main>
+
+    <!-- Modal -->
+    <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="assets/images/eevee.png" alt="eevee">
+                    <br>
+                    <h2>Are you sure?</h2>
+                    <button onclick="restart()" type="button" class="btn modal-yes">Yes</button>
+                    <button type="button" class="btn modal-no" data-bs-dismiss="modal">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- sound files to be played during game -->
 
@@ -87,7 +102,7 @@
     <!-- JS/JQuery links -->
 
     <script src="assets/js/script.js"></script>
-    <script src="assets/js/jquery_functions.js"></script>
+    <!-- <script src="assets/js/jquery_functions.js"></script> -->
 
 </body>
 

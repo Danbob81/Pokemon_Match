@@ -3,7 +3,6 @@ from https://www.freecodecamp.org/news/javascript-projects-for-beginners/#how-to
 with some changes and additions
 */
 
-// VARIABLES
 
 const cardArray = [{ // array to hold card options
         name: 'bulbasaur',
@@ -61,12 +60,10 @@ let cardsChosenId = [];
 let cardsWon = [];
 let finish = document.createElement('p');
 
-// FUNCTIONS
 
 // create board
-cardArray.sort(() => 0.5 - Math.random()); //to make card layout appear random
-
 function createBoard() {
+    cardArray.sort(() => 0.5 - Math.random()); //to make card layout appear random
 
     for (let i = 0; i < cardArray.length; i++) {
         let grid = document.querySelector('.grid');
@@ -131,3 +128,30 @@ function playAudio(audioElementId) {
 function restart() {
     location.reload();
 }
+
+$(document).ready(function() {
+
+    // play button animation
+    $("#play-ball").hover(function() {
+        $(this).animate({ height: '103px', width: '103px' }),
+            $(this).animate({ height: '100px', width: '100px' });
+    });
+
+    /*
+    game play area functions to hide play button 
+    when game grid is displayed. 
+    score and restart button also to be displayed 
+    when game grid is displayed.
+    congratulations message to display when game completed.
+    */
+    $('#play-button').click(function() {
+        $('#play-button').hide();
+        $('.grid').show();
+        $('#restart').show();
+        $('#score').show();
+        $('#congrats').show();
+        $('img').css('width', '25%');
+        $('img').css('cursor', 'pointer');
+    });
+
+});

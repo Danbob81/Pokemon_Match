@@ -7,7 +7,7 @@ Play the game [here.](https://danbob81.github.io/Pokemon_Match/)
 
 <h4 align="center"><img src="docs/" alt="site image"></h4>
 
-## User Experience (UX)
+## User Experience (UX) 
 - ### User Stories
     - I would like to play a simple game matching up pairs of images
     - I expect feedback to confirm each matching pair made

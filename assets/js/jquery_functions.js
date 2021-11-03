@@ -13,8 +13,8 @@ $(document).ready(function() {
     when game grid is displayed.
     congratulations message to display when game completed.
     */
-    $('.play-button').click(function() {
-        $('.play-button').hide();
+    $('#play-button').click(function() {
+        $('#play-button').hide();
         $('.grid').show();
         $('#restart').show();
         $('#score').show();
