@@ -54,7 +54,6 @@ const cardArray = [{ // array to hold card options
     },
 ];
 
-const resultDisplay = document.querySelector('#result');
 let cardsChosen = [];
 let cardsChosenId = [];
 let cardsWon = [];
@@ -98,7 +97,7 @@ function checkForMatch() {
     }
     cardsChosen = [];
     cardsChosenId = [];
-    resultDisplay.textContent = cardsWon.length;
+    document.querySelector('#result').textContent = cardsWon.length;
     if (cardsWon.length === cardArray.length / 2) { //if all matches found, show message and play sound
         finish.innerHTML = 'Congratulations! You found them all!';
         document.getElementById('congrats').appendChild(finish);

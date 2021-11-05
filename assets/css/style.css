@@ -15,6 +15,10 @@ p {
     margin: 10px;
 }
 
+.row {
+    margin: auto;
+}
+
 
 /*....................Heading */
 
@@ -65,7 +69,8 @@ p {
     background-color: #f0cf00;
     border: 5px solid #00478d;
     border-radius: 1.875rem;
-    margin-bottom: 3.5px;
+    margin: 0 3.5px 3.5px 3.5px;
+    width: 49%;
 }
 
 #play-button {
@@ -172,6 +177,9 @@ footer {
     .image-area {
         display: none;
     }
+    .game-area {
+        width: 65%;
+    }
     footer {
         position: relative;
         margin-top: 2%;
@@ -181,6 +189,15 @@ footer {
 @media screen and (max-width: 576px) {
     .logo {
         width: 75%;
+    }
+    .game-area {
+        text-align: center;
+        color: #00478d;
+        background-color: #f0cf00;
+        border: 5px solid #00478d;
+        border-radius: 1.875rem;
+        margin-bottom: 3.5px;
+        width: 100%;
     }
     .play {
         margin: 0%;
