@@ -73,7 +73,7 @@ p {
     width: 49%;
 }
 
-#play-button {
+.play-button {
     margin: 20%;
     background-color: transparent;
     color: #00478c;
@@ -82,7 +82,7 @@ p {
     font-size: 1.5625rem;
 }
 
-#play-button:hover {
+.play-button:hover {
     color: #fff;
 }
 
@@ -100,7 +100,7 @@ p {
 
 /* For JS and JQuery functionality */
 
-#score {
+.score {
     display: none;
 }
 

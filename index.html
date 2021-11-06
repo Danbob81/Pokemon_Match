@@ -38,14 +38,14 @@
 
             <section class="col-lg-6 col-md-8 game-area">
                 <div class="grid"></div>
-                <button onclick="createBoard()" type="button" id="play-button">
+                <button onclick="createBoard()" type="button" class="play-button">
                         Tap the Pokeball to Play!<br><br><img src="assets/images/pokeball.png" id="play-ball" alt="pokeball">
                       </button>
                 <br>
-                <h2 id="score">Score: <span id="result"></span></h2>
+                <h2 class="score">Score: <span class="result"></span></h2>
                 <br>
                 <h2 id="congrats"></h2>
-                <button type="button" id="restart" data-bs-toggle="modal" data-bs-target="#confirmModal">Replay Game</button>
+                <button type="button" id="restart" data-bs-toggle="modal" data-bs-target="#confirmModal">Restart Game</button>
             </section>
 
             <!-- image area to show on larger screen sizes only -->
@@ -71,6 +71,21 @@
                     <img src="assets/images/eevee.png" alt="eevee">
                     <br>
                     <h2>Are you sure?</h2>
+                    <button onclick="restart()" type="button" class="btn modal-yes">Yes</button>
+                    <button type="button" class="btn modal-no" data-bs-dismiss="modal">No</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="finishModal" tabindex="-1" aria-labelledby="finishModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="assets/images/eevee.png" alt="eevee">
+                    <br>
+                    <h2>Congratulations!<br>You found them all!</h2><br>
+                    <h3>Play again?</h3>
                     <button onclick="restart()" type="button" class="btn modal-yes">Yes</button>
                     <button type="button" class="btn modal-no" data-bs-dismiss="modal">No</button>
                 </div>

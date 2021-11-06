@@ -97,10 +97,9 @@ function checkForMatch() {
     }
     cardsChosen = [];
     cardsChosenId = [];
-    document.querySelector('#result').textContent = cardsWon.length;
+    document.querySelector('.result').textContent = cardsWon.length;
     if (cardsWon.length === cardArray.length / 2) { //if all matches found, show message and play sound
-        finish.innerHTML = 'Congratulations! You found them all!';
-        document.getElementById('congrats').appendChild(finish);
+        $('#finishModal').modal('show');
         playAudio('game-finish'); //added to give user feedback they have completed the game
     }
 }
@@ -128,29 +127,25 @@ function restart() {
     location.reload();
 }
 
-$(document).ready(function() {
+// play button animation
+$("#play-ball").hover(function() {
+    $(this).animate({ height: '103px', width: '103px' }),
+        $(this).animate({ height: '100px', width: '100px' });
+});
 
-    // play button animation
-    $("#play-ball").hover(function() {
-        $(this).animate({ height: '103px', width: '103px' }),
-            $(this).animate({ height: '100px', width: '100px' });
-    });
-
-    /*
-    game play area functions to hide play button 
-    when game grid is displayed. 
-    score and restart button also to be displayed 
-    when game grid is displayed.
-    congratulations message to display when game completed.
-    */
-    $('#play-button').click(function() {
-        $('#play-button').hide();
-        $('.grid').show();
-        $('#restart').show();
-        $('#score').show();
-        $('#congrats').show();
-        $('img').css('width', '25%');
-        $('img').css('cursor', 'pointer');
-    });
-
+/*
+game play area functions to hide play button 
+when game grid is displayed. 
+score and restart button also to be displayed 
+when game grid is displayed.
+congratulations message to display when game completed.
+*/
+$('.play-button').click(function() {
+    $('.play-button').hide();
+    $('.grid').show();
+    $('#restart').show();
+    $('.score').show();
+    $('#congrats').show();
+    $('img').css('width', '25%');
+    $('img').css('cursor', 'pointer');
 });
