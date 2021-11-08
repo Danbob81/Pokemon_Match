@@ -156,6 +156,7 @@ footer {
     color: #fff;
     background-color: #00478c;
     border: solid 2px #f0cf00;
+    width: 50px;
     border-radius: 16px;
     padding: 2%;
     margin: 2%;
@@ -165,6 +166,7 @@ footer {
     color: #fff;
     background-color: #00478c;
     border: solid 2px #ef4036;
+    width: 50px;
     border-radius: 16px;
     padding: 2%;
     margin: 2%;
