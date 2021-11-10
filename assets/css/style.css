@@ -94,7 +94,7 @@ p {
     flex-direction: row-reverse;
     height: auto;
     width: auto;
-    padding: 10%;
+    padding: 10% 10% 0 10%;
 }
 
 
@@ -129,9 +129,19 @@ p {
 footer {
     text-align: center;
     color: #fff;
+    text-decoration: none;
     background-color: #ef4036;
     border: 5px solid #00478c;
     border-radius: 1.875rem;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: #a19e9e;
 }
 
 
@@ -224,15 +234,16 @@ footer {
     }
 }
 
-@media screen and (min-width: 1400px) {
+
+/* @media screen and (min-width: 1400px) {
     .grid {
         align-items: center;
         justify-content: center;
         display: none;
         flex-wrap: wrap;
         flex-direction: row-reverse;
-        height: 400px;
-        width: 600px;
+        height: auto;
+        width: auto;
         padding: 10%;
     }
-}
+} */

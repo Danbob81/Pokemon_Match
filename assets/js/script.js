@@ -52,6 +52,22 @@ const cardArray = [{ // array to hold card options
         name: 'squirtle',
         img: 'assets/images/squirtle.png'
     },
+    {
+        name: 'psyduck',
+        img: 'assets/images/psyduck.png'
+    },
+    {
+        name: 'psyduck',
+        img: 'assets/images/psyduck.png'
+    },
+    {
+        name: 'snorlax',
+        img: 'assets/images/snorlax.png'
+    },
+    {
+        name: 'snorlax',
+        img: 'assets/images/snorlax.png'
+    },
 ];
 
 let cardsChosen = [];
@@ -133,13 +149,13 @@ $("#play-ball").hover(function() {
         $(this).animate({ height: '100px', width: '100px' });
 });
 
-/*
-game play area functions to hide play button 
-when game grid is displayed. 
-score and restart button also to be displayed 
-when game grid is displayed.
-congratulations message to display when game completed.
-*/
+/**
+ *game play area functions to hide play button 
+ *when game grid is displayed. 
+ *score and restart button also to be displayed 
+ *when game grid is displayed.
+ *congratulations message to display when game completed.
+ */
 $('.play-button').click(function() {
     $('.play-button').hide();
     $('.grid').show();
