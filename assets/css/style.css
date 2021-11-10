@@ -114,11 +114,6 @@ p {
     margin: 2%;
 }
 
-
-/* #replay {
-    display: none;
-} */
-
 #congrats {
     display: none;
 }
@@ -154,7 +149,6 @@ a:hover {
     display: flex;
     flex-direction: column;
     width: 100%;
-    pointer-events: auto;
     background-color: #00478c;
     background-clip: padding-box;
     border: 5px solid #f0cf00;
@@ -166,6 +160,7 @@ a:hover {
     color: #fff;
     background-color: #00478c;
     border: solid 2px #f0cf00;
+    pointer-events: auto;
     width: 50px;
     border-radius: 16px;
     padding: 2%;
@@ -176,6 +171,7 @@ a:hover {
     color: #fff;
     background-color: #00478c;
     border: solid 2px #ef4036;
+    pointer-events: auto;
     width: 50px;
     border-radius: 16px;
     padding: 2%;
@@ -233,17 +229,3 @@ a:hover {
         margin-top: 2%;
     }
 }
-
-
-/* @media screen and (min-width: 1400px) {
-    .grid {
-        align-items: center;
-        justify-content: center;
-        display: none;
-        flex-wrap: wrap;
-        flex-direction: row-reverse;
-        height: auto;
-        width: auto;
-        padding: 10%;
-    }
-} */
