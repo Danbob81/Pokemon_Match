@@ -1,15 +1,15 @@
 <h1 align="center">Pokemon Match</h1>
 <h2 align="center">Gotta Match 'Em All!</h2>
 
-This is a simple memory match game in which the user tests their memory skills by matching up pairs of the same Pokemon by turning over cards on a board to reveal the hidden Pokemon character. The game is complete when all pairs have been matched.
+This is a simple memory match game based on Pokemon. The user tests their memory skills by matching up pairs of the same hidden Pokemon characters by turning over cards on the board to reveal them. The game is complete when all pairs have been matched.
 
 Play the game [here.](https://danbob81.github.io/Pokemon_Match/)
 
-<h4 align="center"><img src="docs/" alt="site image"></h4>
+<h4 align="center"><img src="docs/readme_items/multi_device_look.png" alt="site image"></h4>
 
 ## User Experience (UX) 
 - ### User Stories
-    - I would like to play a simple game matching up pairs of images
+    - I would like to play a simple game to test my memory by matching up pairs of images
     - I expect feedback to confirm each matching pair made
     - I expect to see my score
     - I expect to be able to play on different devices (laptop, mobile tablet)
@@ -28,14 +28,14 @@ Play the game [here.](https://danbob81.github.io/Pokemon_Match/)
 
 - ### Implemented:
     - Game-play area which is the dominant section of the screen layout.
-    - Rules area, slightly smaller and to the side (or underneath in mobile view), with simple game instructions.
-    - Image section to the opposite side of the rules section balancing out the layout. Only shows in desktop/laptop screen sizes.
+    - Rules area, slightly smaller, with simple game instructions.
+    - Image section to the opposite side of the rules section balancing out the layout. NOTE: Only shows in desktop/laptop screen sizes.
     - Score shows under game board.
     - Replay button.
 
 - ### Future features:
     - Timer - to be displayed showing time taken to play.
-    - Additional grid layout containing more cards which can be selected instead of the original.
+    - Scoreboard - to keep track of previous/other peoples scores/times
 
 ## Technologies used
 
@@ -58,7 +58,7 @@ Play the game [here.](https://danbob81.github.io/Pokemon_Match/)
 
 - ### Validator testing:
     - HTML - [W3C Validator](https://bit.ly/31qLrPD) - passed
-    - CSS - [(Jigsaw) validator](https://bit.ly/3nMSs4G) - passed
+    - CSS - [(Jigsaw) validator](https://bit.ly/3F29Zg1) - passed
     - Javascript - [JSHint](https://jshint.com/) - passed
 
 - ### User stories' testing:
@@ -78,7 +78,7 @@ Play the game [here.](https://danbob81.github.io/Pokemon_Match/)
 
 ## Deployment
 ### Github Pages
-- I deployed the site to Github Pages using the following process:
+- Site deployed to Github Pages using the following process:
     - Click the 'Settings' tab in the GitHub repository
     - Select 'Pages' in the left hand menu
     - Under the heading of 'Source', select 'Master Branch' from the drop-down menu
@@ -88,9 +88,9 @@ Play the game [here.](https://danbob81.github.io/Pokemon_Match/)
 ## Credits
 
 ### Content:
-- 
-- 
-- 
+- Javascript content based on this YouTube video tutorial: [Learn JavaScript by Building 7 Games - Full Course](https://bit.ly/3D45TUl) 
+from [freeCodeCamp](https://bit.ly/3bZtVE8) 
+ 
 ### Media:
 - Pokemon logo taken from [pngitem.com](https://bit.ly/2ZPHsvp)
 - Ash image taken from [pngitem.com](https://bit.ly/3jWp1Mf)
@@ -102,7 +102,7 @@ Play the game [here.](https://danbob81.github.io/Pokemon_Match/)
     - [pokemon GO level up by Coolbuddyn](https://bit.ly/3BtOToV)
 
 ### Acknowledgements:
-- 
+- Code Institute - 
 - 
 - 
 
