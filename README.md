@@ -10,8 +10,10 @@ Play the game [here.](https://danbob81.github.io/Pokemon_Match/)
 ## User Experience (UX) 
 - ### User Stories
     - I would like to play a simple game to test my memory by matching up pairs of images
-    - I expect feedback to confirm each matching pair made
+    - I expect feedback to confirm each matching pair made and the matched images remain on show
     - I expect to see my score
+    - I expect confirmation that I have completed the game successfully
+    - I would like the option to restart/replay the game 
     - I expect to be able to play on different devices (laptop, mobile tablet)
     - I expect to have fun! :)
 
@@ -56,25 +58,38 @@ Play the game [here.](https://danbob81.github.io/Pokemon_Match/)
     
 ## Testing
 
+I used the Chrome Developer Tool to simulate the different viewport sizes for desktop and laptop views, tablet views and mobile views. I used this throughout the development process as well as for testing the website once it was deployed to GitHub Pages.
+
+The deployed website was also tested using Chrome, Edge and Firefox as well as on mobile (using Chrome for Android)
+
+- ### User stories' testing:
+    - I would like to play a simple game to test my memory by matching up pairs of images
+        - Memory match game uses Pokemon images to test the users memory - hidden images are arranged at random and change position each time the game is loaded
+    - I expect feedback to confirm each matching pair made and the matched images remain on show
+        - sound effects play at game load stage, with each card turn-over, with each non successful and successful matching and successful game completion. Matched image pairs remain on show
+    - I expect to see my score
+        - score is displayed below the game grid
+    - I expect confirmation that I have completed the game successfully
+        - on successful game completion, a sound is played and a pop-up modal appears with a congratulaions message
+    - I would like the option to restart/replay the game 
+        - a button appears below the game grid giving the player the option to restart. This presents a pop-up with a yes/no confirmation option. There is also a replay button within the game completion pop-up modal
+    - I expect to be able to play on different devices (laptop, mobile tablet)
+        - the game was tested, and works, on desktop/laptop, tablet and mobile
+    - I expect to have fun! :)
+        - I had fun! :)
+
 - ### Validator testing:
     - HTML - [W3C Validator](https://bit.ly/31qLrPD) - passed
     - CSS - [(Jigsaw) validator](https://bit.ly/3F29Zg1) - passed
     - Javascript - [JSHint](https://jshint.com/) - passed
-
-- ### User stories' testing:
-    -
-    -
-    -
-
 - ### Additional testing:
-    -
-    -
-    -
+    Black box testing was also carried out on the final deployed website.
+    
+    All tests passed. Results can be viewed [here](docs/readme_items/website_test_plan.pdf)
 
 - ### Bugs
-    -
-    -
-    -
+    - Game grid layout displayed differently at certain mobile screen sizes (iPhone 5/SE in particular). To overcome this issue I adjusted the width percentage for the grid images.
+    - Restart game button was being pushed below the bottom line of the game section at larger screen sizes (above 1400px). To correct this I adjusted the bottom margin of the game grid.
 
 ## Deployment
 ### Github Pages
@@ -102,7 +117,7 @@ from [freeCodeCamp](https://bit.ly/3bZtVE8)
     - [pokemon GO level up by Coolbuddyn](https://bit.ly/3BtOToV)
 
 ### Acknowledgements:
-- Code Institute - 
-- 
-- 
+- Code Institute for the lessons and support
+- My mentor Rohit Sharma for the helpful suggestions and guidance he has given during this project
+- Patrick Justus for the additional lessons and insights into web development
 

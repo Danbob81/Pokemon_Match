@@ -73,12 +73,14 @@ const cardArray = [{ // array to hold card options
 let cardsChosen = [];
 let cardsChosenId = [];
 let cardsWon = [];
-let finish = document.createElement('p');
 
-
-// create board
+/**
+ * create the game board
+ * random layout each time board is loaded
+ * audio file to play when board loads
+ */
 function createBoard() {
-    cardArray.sort(() => 0.5 - Math.random()); //to make card layout appear random
+    cardArray.sort(() => 0.5 - Math.random());
 
     for (let i = 0; i < cardArray.length; i++) {
         let grid = document.querySelector('.grid');
@@ -87,26 +89,32 @@ function createBoard() {
         card.setAttribute('data-id', i);
         card.addEventListener('click', flipCard);
         grid.appendChild(card);
-        playAudio('game-load'); //added to give user feedback that game board has loaded
+        playAudio('game-load');
     }
 }
 
-// check for matches
+/**
+ * check cards for matches
+ * if same card clicked, notify user by playing a sound and resetting cards
+ * if cards match, stop from being clicked again and play sound
+ * if cards don't match, reset cards to be clicked again, also play sound
+ * if all matches found, show message and play sound
+ */
 function checkForMatch() {
     let cards = document.querySelectorAll('img');
     const optionOneId = cardsChosenId[0];
     const optionTwoId = cardsChosenId[1];
 
-    if (optionOneId === optionTwoId) { //if same card clicked, notify user by playing a sound and resetting cards
+    if (optionOneId === optionTwoId) {
         cards[optionOneId].setAttribute('src', 'assets/images/pokeball.png');
         cards[optionTwoId].setAttribute('src', 'assets/images/pokeball.png');
         playAudio('same-card'); //added to give user feedback that the same card has been chosen
-    } else if (cardsChosen[0] === cardsChosen[1]) { //if cards match, stop from being clicked again and play sound
+    } else if (cardsChosen[0] === cardsChosen[1]) {
         cards[optionOneId].removeEventListener('click', flipCard, );
         cards[optionTwoId].removeEventListener('click', flipCard, );
         cardsWon.push(cardsChosen);
         playAudio('card-match'); //added to give user feedback that the two chosen cards match
-    } else { //if cards don't match, reset cards to be clicked again, also play sound
+    } else {
         cards[optionOneId].setAttribute('src', 'assets/images/pokeball.png');
         cards[optionTwoId].setAttribute('src', 'assets/images/pokeball.png');
         playAudio('no-match'); //added to give user feedback that the two chosen cards don't match
@@ -114,7 +122,7 @@ function checkForMatch() {
     cardsChosen = [];
     cardsChosenId = [];
     document.querySelector('.result').textContent = cardsWon.length;
-    if (cardsWon.length === cardArray.length / 2) { //if all matches found, show message and play sound
+    if (cardsWon.length === cardArray.length / 2) {
         $('#finishModal').modal('show');
         playAudio('game-finish'); //added to give user feedback they have completed the game
     }
@@ -138,23 +146,25 @@ function playAudio(audioElementId) {
     soundElement.play();
 }
 
-// reload page
+/**
+ * reload page when restart or replay button clicked
+ */
 function restart() {
     location.reload();
 }
 
-// play button animation
+/** 
+ * animation to show on play game button
+ */
 $("#play-ball").hover(function() {
     $(this).animate({ height: '103px', width: '103px' }),
         $(this).animate({ height: '100px', width: '100px' });
 });
 
 /**
- *game play area functions to hide play button 
- *when game grid is displayed. 
- *score and restart button also to be displayed 
- *when game grid is displayed.
- *congratulations message to display when game completed.
+ *game play area functions to hide play button when game grid is displayed. 
+ *score and restart button also to be displayed when game grid is displayed.
+ *congratulations message to display within modal when game completed.
  */
 $('.play-button').click(function() {
     $('.play-button').hide();
