@@ -24,7 +24,13 @@ Play the game [here.](https://danbob81.github.io/Pokemon_Match/)
         - Google Fonts - [ArchitectsDaughter](https://bit.ly/3EwQP1N)
 
 - ### Wireframes
-    - ### [(link to wireframes pdf)](docs/readme_items/pokemon_match_wireframe.pdf)
+
+    - Wireframes created in Balsamiq for desktop, tablet and mobile views.
+
+        PDF links here:
+        - [Desktop](docs/readme_items/pokemon_match_wireframe_desktop.pdf)
+        - [Tablet](docs/readme_items/pokemon_match_wireframe_tablet.pdf)
+        - [Mobile](docs/readme_items/pokemon_match_wireframe_mobile.pdf)
 
 ## Features
 
