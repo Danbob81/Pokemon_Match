@@ -14,7 +14,7 @@ Play the game [here.](https://danbob81.github.io/Pokemon_Match/)
     - I expect to see my score
     - I expect confirmation that I have completed the game successfully
     - I would like the option to restart/replay the game 
-    - I expect to be able to play on different devices (laptop, mobile tablet)
+    - I expect to be able to play on different devices (laptop, mobile and tablet)
     - I expect to have fun! :)
 
 - ### Design
@@ -25,7 +25,7 @@ Play the game [here.](https://danbob81.github.io/Pokemon_Match/)
 
 - ### Wireframes
 
-    - Wireframes created in Balsamiq for desktop, tablet and mobile views.
+    - Wireframes for desktop, tablet and mobile views created using Balsamiq.
 
         PDF links here:
         - [Desktop](docs/readme_items/pokemon_match_wireframe_desktop.pdf)
@@ -40,6 +40,7 @@ Play the game [here.](https://danbob81.github.io/Pokemon_Match/)
     - Image section to the opposite side of the rules section balancing out the layout. NOTE: Only shows in desktop/laptop screen sizes.
     - Score shows under game board.
     - Replay button.
+    - Pop-up on game completion showing 'congratulations' message and yes/no option to play again.
 
 - ### Future features:
     - Timer - to be displayed showing time taken to play.
@@ -72,14 +73,14 @@ The deployed website was also tested using Chrome, Edge and Firefox as well as o
     - I would like to play a simple game to test my memory by matching up pairs of images
         - Memory match game uses Pokemon images to test the users memory - hidden images are arranged at random and change position each time the game is loaded
     - I expect feedback to confirm each matching pair made and the matched images remain on show
-        - sound effects play at game load stage, with each card turn-over, with each non successful and successful matching and successful game completion. Matched image pairs remain on show
+        - sound effects play at game load stage, with each card turn-over, with each non-successful and successful matching, and successful game completion. Matched image pairs remain on show
     - I expect to see my score
         - score is displayed below the game grid
     - I expect confirmation that I have completed the game successfully
         - on successful game completion, a sound is played and a pop-up modal appears with a congratulaions message
     - I would like the option to restart/replay the game 
         - a button appears below the game grid giving the player the option to restart. This presents a pop-up with a yes/no confirmation option. There is also a replay button within the game completion pop-up modal
-    - I expect to be able to play on different devices (laptop, mobile tablet)
+    - I expect to be able to play on different devices (laptop, mobile and tablet)
         - the game was tested, and works, on desktop/laptop, tablet and mobile
     - I expect to have fun! :)
         - I had fun! :)
